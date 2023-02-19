@@ -120,7 +120,7 @@ function HomeComponent() {
             </Row>
             <Row>
                 <Space >
-                    {content === "aboutus" && <p>{companyInfo}</p>}
+                    {content === "aboutus" && <><h3>Klaim App</h3><p>{companyInfo}</p></>}
                     {content === "signin" && <SignInComponent signIn={handleSignIn} />}
                     {content === "profile" && <ProfileComponent token={state.token} />}
                 </Space>
